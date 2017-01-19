@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500&subset=cyrillic');
+
+@darkPrimaryColor:   #1976D2;
+@primaryColor:       #2196F3;
+@lightPrimaryColor:  #BBDEFB;
+@textPrimaryColor:   #FFFFFF;
+@accentColor:        #FF4081;
+@primaryTextColor:   #212121;
+@secondaryTextColor: #757575;
+@dividerColor:       #BDBDBD;
+
+figure{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+  font-size: 0;
+}
+
+h1{
+;
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: @primaryColor;
+}
+
+.transition(@transition){
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.brd(@brd){
+  -webkit-border-radius: @brd;
+  -moz-border-radius: @brd;
+  border-radius: @brd;
+}
+
+.bxshd(@bxshd){
+  -webkit-box-shadow: @bxshd;
+  -moz-box-shadow: @bxshd;
+  box-shadow: @bxshd;
+}
+
+.transform(@transform){
+  -moz-transform: @transform; 
+  -ms-transform: @transform; 
+  -webkit-transform: @transform; 
+  -o-transform: @transform;
+  transform: @transform;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: @darkPrimaryColor;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+input::-webkit-input-placeholder{
+  font-size: 16px;
+  opacity: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: @darkPrimaryColor;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+input::-moz-placeholder{
+  font-size: 16px;
+  opacity: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: @darkPrimaryColor;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}/* Firefox 19+ */
+input:-moz-placeholder{
+  font-size: 16px;
+  opacity: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: @darkPrimaryColor;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}/* Firefox 18- */
+input:-ms-input-placeholder{
+  font-size: 16px;
+  opacity: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: @darkPrimaryColor;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input:focus::-webkit-input-placeholder {opacity: 0;}
+input:focus::-moz-placeholder          {opacity: 0;}
+input:focus:-moz-placeholder           {opacity: 0;}
+input:focus:-ms-input-placeholder      {opacity: 0;}
+
+/*********/
+
+html{
+	box-sizing: border-box;
+}
+
+body{
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: @primaryTextColor;
+  overflow-x: hidden;
+}
+
