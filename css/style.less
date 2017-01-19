@@ -129,12 +129,18 @@ html{
 }
 
 body{
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-  color: @primaryTextColor;
-  overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: @primaryTextColor;
+    overflow-x: hidden;
 }
 
+.wrapper{
+	width: 100%;
+	max-width: 1170px;
+}
