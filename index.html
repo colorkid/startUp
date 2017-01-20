@@ -6,23 +6,82 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.png">
 	<link rel="stylesheet/less" type="text/css" href="css/style.less">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<script src="less.js" type="text/javascript"></script>
+	<script src="libs/jquery-3.1.1.min.js" type="text/javascript"></script>
 </head>
  	<body>
 		<header class="great-header">
 			<div class="great-header__top">
-				<div class="wrapper">
-					<div class="great-header__logo">Партнерская программа для интернет магазинов</div>
+				<div class="great-header__wrapper">
+					<div class="great-header__message">Программа для интернет магазинов</div>
 					<div class="great-header__rigth">
 						<div class="great-header__phone-number">8 (812) 611 10 50</div>
 						<div class="great-header__email">ishop@stolberi.ru</div>
 					</div>
 				</div>
 			</div>
+			<div class="great-header__bottom">
+				<div class="great-header__wrapper great-header__wrapper--bottom">
+					<figure class="logo"></figure>
+					<div class="burger" id="adaptive-burger">
+						<div class="burger__wrapper">
+							<span class="burger__line"></span>
+						</div>
+					</div>
+					<nav class="great-menu">
+						<ul class="great-menu__ul">
+							<li class="great-menu__li"><a href="#" class="great-menu__a">О программе</a></li>
+							<li class="great-menu__li"><a href="#" class="great-menu__a">Выгоды</a></li>
+							<li class="great-menu__li"><a href="#" class="great-menu__a">Для кого</a></li>
+							<li class="great-menu__li"><a href="#" class="great-menu__a">Приемущества</a></li>
+							<li class="great-menu__li"><a href="#" class="great-menu__a">О нас</a></li>
+							<li class="great-menu__li"><a href="#" class="great-menu__a">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 		</header>
 		<main>
+			<div class="slider">
+				<div class="owl-carousel owl-theme">
+				  <div> Your Content </div>
+				  <div> Your Content </div>
+				  <div> Your Content </div>
+				  <div> Your Content </div>
+				  <div> Your Content </div>
+				  <div> Your Content </div>
+				  <div> Your Content </div>
+				</div>
+			</div>
 		</main>
 		<footer class="great-footer">
+			<script type="text/javascript">//Слайдер
+				$(document).ready(function(){
+				  $('.owl-carousel').owlCarousel();
+				});
+			</script>
+
+
+
+
+			<script type="text/javascript">//Адаптивное меню
+				var burgerAdaptive = $("#adaptive-burger");
+				var menuAdaptive = $(".great-menu");
+
+				burgerAdaptive.click(function (){
+
+					if(burgerAdaptive.hasClass("burger--active")){
+						menuAdaptive.removeClass("great-menu--show");
+						burgerAdaptive.removeClass("burger--active");
+					}
+
+					else{
+						menuAdaptive.addClass("great-menu--show");
+						burgerAdaptive.addClass("burger--active");
+					}
+				});
+			</script>
 		</footer>
 	</body>
 </html>
