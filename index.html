@@ -33,12 +33,11 @@
 					</div>
 					<nav class="great-menu">
 						<ul class="great-menu__ul">
-							<li class="great-menu__li"><a href="#" class="great-menu__a">О программе</a></li>
-							<li class="great-menu__li"><a href="#" class="great-menu__a">Выгоды</a></li>
-							<li class="great-menu__li"><a href="#" class="great-menu__a">Для кого</a></li>
-							<li class="great-menu__li"><a href="#" class="great-menu__a">Приемущества</a></li>
-							<li class="great-menu__li"><a href="#" class="great-menu__a">О нас</a></li>
-							<li class="great-menu__li"><a href="#" class="great-menu__a">Контакты</a></li>
+							<li class="great-menu__li"><a href="#pro" class="great-menu__a">О программе</a></li>
+							<li class="great-menu__li"><a href="#rev" class="great-menu__a">Отзывы</a></li>
+							<li class="great-menu__li"><a href="#fea" class="great-menu__a">Приемущества</a></li>
+							<li class="great-menu__li"><a href="#com" class="great-menu__a">Наша команда</a></li>
+							<li class="great-menu__li"><a href="#con" class="great-menu__a">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -71,7 +70,7 @@
 		 	</div>
 		 	<div class="make">
 		 		<section class="make__left">
-		 			<div class="titles">
+		 			<div class="titles" id="pro">
 			 			<div class="titles__title">Создай свое дело</div>
 			 			<p class="titles__description">Вместе с нами</p>
 			 		</div>
@@ -102,12 +101,13 @@
 		 					<div class="services__description">К каждому партнеру прикрепляется личный менеджер, который регулирует все вопросы касаемых нашего сотрудничества.</div>
 		 				</div>
 		 			</article>
+		 			<button class="great-button">Получить консультацию</button>
 		 		</section>
 		 	</div>
 		 	<div class="partners">
 		 		<div class="wrapper">
 					<div class="titles">
-				 		<div class="titles__title">Партнеры</div>
+				 		<div class="titles__title" id="rev">Партнеры</div>
 				 		<p class="titles__description">Отзывы от наших партнеров</p>
 				 	</div>
 				 	<div class="carousel">
@@ -135,8 +135,8 @@
 		 		</div>
 		 	</div>
 		 	<section class="features">
-		 		<div class="wrapper">
-		 			<div class="titles">
+		 		<div class="wrapper wrapper--features">
+		 			<div class="titles" id="fea">
 				 		<div class="titles__title">Приемущества</div>
 				 		<p class="titles__description">Приемущества нашей программы</p>
 				 	</div>
@@ -182,12 +182,13 @@
 				 			<div class="features__description">Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия.</div>
 				 		</div>
 				 	</article>
+				 	<button class="great-button great-button--features">Получить консультацию</button>
 		 		</div>
 		 	</section>
 		 	<section class="team">
 		 		<div class="wrapper">
 		 			<div class="titles titles--team">
-				 		<div class="titles__title">Наша команда</div>
+				 		<div class="titles__title" id="com">Наша команда</div>
 				 		<p class="titles__description">С кем Вы будуте работать</p>
 				 	</div>
 				 	<article class="team__person">
@@ -222,7 +223,7 @@
 				 	</article>
 				 	<article class="team__person">
 				 		<header class="team__pic">
-				 			<img src="img/mariya.jpg" class="team__img" alt="Менеджер Алла Макарова">
+				 			<img src="img/alla.jpg" class="team__img" alt="Менеджер Алла Макарова">
 				 		</header>
 				 		<footer class="team__footer">
 				 			<div class="team__name">Алла Макарова</div>
@@ -232,8 +233,99 @@
 				 	</article>
 		 		</div>
 		 	</section>
+		 	<div class="black-area">
+				<form action="form.php" method="post" class="form">
+					<div class="form__close"></div>
+					<div class="form__title">Мы Вам перезвоним и все расскажем</div>
+					<input type="text" class="form__field" placeholder="Введите Ваш телефон" name="contact_tel">
+					<input type="submit" value="Получить консультацию" class="form__button">
+				</form>
+			</div>
 		</main>
 		<footer class="great-footer">
+			<div class="wrapper wrapper--footer">
+				<div class="titles titles--footer" id="con">
+				 	<div class="titles__title titles__title--footer">Контакты</div>
+				 	<p class="titles__description titles__description--footer">Нам можно не только позвонить или написать, но и приехать к нам в офис</p>
+				 </div>
+				 <button class="great-button great-button--footer">Получить консультацию</button>
+				 <div class="great-footer__footer">
+					 <div class="footer-menu">
+					 	<span class="footer-menu__title">Меню</span>
+					 	<ul class="footer-menu__ul">
+					 		<li class="footer-menu__li"><a href="#pro" class="footer-menu__a">О программе</a></li>
+					 		<li class="footer-menu__li"><a href="#rev" class="footer-menu__a">Отзывы</a></li>
+					 		<li class="footer-menu__li"><a href="#fea" class="footer-menu__a">Приемущества</a></li>
+					 		<li class="footer-menu__li"><a href="#com" class="footer-menu__a">Наша команда</a></li>
+					 	</ul>
+					</div>
+					<div class="great-footer__contacts">
+					 	<div class="row">
+					 		<div class="cell cell--title">Контакты</div>
+					 	</div>
+					 	<div class="row">
+					 		<div class="cell">Адресс:</div>
+					 		<div class="cell">195030, Санкт-Петербург, ул. Химиков 26</div>
+					 	</div>
+					 	<div class="row">
+					 		<div class="cell">Телефон:</div>
+					 		<div class="cell">8 (800) 611 10 50</div>
+					 	</div>
+					 	<div class="row">
+					 		<div class="cell">Email:</div>
+					 		<div class="cell">ishop@stolberi.ru</div>
+					 	</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyrigth">© 2017 ООО «МЕБЕЛЬПРОФИ». Все права защищены.</div>
+
+
+
+
+
+
+
+
+
+			<script type="text/javascript">
+				$('.great-menu__a').click(function(){
+	
+					var el = $(this).attr('href');
+					var elWrapped = $(el);
+				
+					scrollToDiv(elWrapped,40);
+						
+					return false;
+				});
+			
+				function scrollToDiv(element,navheight){
+
+					var offset = element.offset();
+					var offsetTop = offset.top;
+					var totalScroll = offsetTop-navheight;
+						
+					$('body,html').animate({
+							scrollTop: totalScroll
+					}, 500);
+				}
+			</script>
+
+			<script type="text/javascript">/*скрипт всплывающего окна*/
+				var buttons = $(".great-button");
+				var blackArea = $(".black-area");
+				var close = $(".form__close");
+
+				buttons.click(function(){
+					blackArea.addClass("black-area--show");
+				});
+
+				close.click(function(){
+					blackArea.removeClass("black-area--show");
+				});
+				
+			</script>
+
 			<script type="text/javascript">//Карусель отзывов
 			var slide = $(".carousel__slide");
 			var pics = $(".carousel__pic");
@@ -248,6 +340,11 @@
 				slide.eq($(this).index()).addClass("carousel__slide--show");
 			});
 			</script>
+
+
+
+
+
 
 			<script type="text/javascript">//Слайдер
 				    $(document).ready(function() {
