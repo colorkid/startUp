@@ -48,7 +48,7 @@ a{
   color: @primaryColor;
 }
 
-div, section, article, header, main, footer{
+div, section, article, header, main, footer, form, input, button{
 	box-sizing: border-box;
 }
 
@@ -479,6 +479,14 @@ main{
 	line-height: 1.6 * 14px;
 }
 
+.make__accent{
+	font-family: "Roboto Condensed";
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: @accentColor;
+}
+
 .make__pic {
     width: 100%;
     max-width: 520px;
@@ -513,7 +521,7 @@ main{
 	width: 67px;
 	height: 67px;
 	margin-right: 30px;
-	background-image: url("../img/count.png");
+	background-image: url("../img/content.png");
 	background-repeat: no-repeat;
 	background-size: 60%;
 	background-position: 50%;
@@ -697,6 +705,26 @@ main{
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-color: @blue;
+}
+
+.features__pic--free{
+	background-image: url("../img/package.png");
+}
+
+.features__pic--ruble{
+	background-image: url("../img/ruble.png");
+}
+
+.features__pic--delivery{
+	background-image: url("../img/delivery.png");
+}
+
+.features__pic--hammer{
+	background-image: url("../img/justice.png");
+}
+
+.features__pic--equal{
+	background-image: url("../img/equal.png");	
 }
 
 .features__item {
